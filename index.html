@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="counters-board">
+            <div class="counter">
+                <h4 class="counter-header">clock</h4>
+                <div class="counter-content">
+                    <span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+            </div>
+            <div class="counter">
+                <h4 class="counter-header">moves</h4>
+                <div class="counter-content">
+                    <span id="moves">00</span>/<span id="maxMoves">20</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="deck" id="deck"></div>
+
+        <div class="menu">
+            <div class="menu-bar">
+                <h2 id="menu-header">Welcome to memory game!</h2>
+                <p id="menu-message">Have fun!</p>
+                <button id="init">start game</button>
+                <button id="nextLevel" class="invisible">next level</button>
+            </div>
+        </div>
+
+        <script src="js/utils.js"></script>
+        <script src="js/globals.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/move_counter.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/draw_field.js"></script>
+        <script src="js/game_logics.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
