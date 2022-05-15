@@ -1,11 +1,18 @@
 :root {
     --gradient: linear-gradient(to right top, #ffd700, #0057b7);
+    --counters-board-height: 5rem;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    margin: auto;
+    margin: 0;
 }
+
 .counters-board {
+    height: var(--counters-board-height);
     padding: 0.5rem 2rem;
     margin: 0;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
@@ -29,11 +36,18 @@ body {
     color: var(--gradient);
 }
 
+.deck-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - var(--counters-board-height));
+}
+
 .deck {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     max-width: 50rem;
+    align-items: center;
     justify-content: center;
 }
 
@@ -130,6 +144,7 @@ body {
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
+
 button {
   cursor: pointer;
   border: 0;
