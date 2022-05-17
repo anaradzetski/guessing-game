@@ -1,0 +1,15 @@
+:root {
+    --gradient: linear-gradient(to right top, #ffd700, #0057b7);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.invisible {
+    display: none !important;
+}

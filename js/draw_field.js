@@ -6,7 +6,7 @@ const getEmojisList = () => {
     })
 }
 
-let deck = document.querySelector("#deck");
+let deck = document.querySelector("#deck-container");
 
 const drawEmojis = () => {
     rearrangedEmojis = getEmojisList();
